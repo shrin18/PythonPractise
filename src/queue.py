@@ -17,7 +17,7 @@ class Queue:
         print('dequeue <value>')
         print('quit')
 
-        do = input('what would you like to do').split()
+        d0 = input('what would you like to do').split()
 
         operation = do[0].strip().lower
         

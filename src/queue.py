@@ -1,24 +1,28 @@
-class Queue:
-    def __init__(self):
-        self.items = []
+#Queue using list and deque
+from collections import deque
+import array as arr
 
-    def is_empty(self):
-        return self.items == []
+a = arr.array('d', [1.1, 7.8, 9,7])
+print(a)
 
-    def enqueue(self, data):
-        self.items.append(data)
+queue = deque(["Shrinish", "Heramb", "Ninad", "Shreyash"])
 
-    def dequeue(self):
-        return self.items.pop(0)
+print(queue)
+queue.append("Shriya")
 
-    q = Queue()
-    while True:
-        print('enqueue <value>')
-        print('dequeue <value>')
-        print('quit')
+print(queue)
+queue.append("Vedashri")
 
-        d0 = input('what would you like to do').split()
+print(queue)
+print(queue.popleft())
 
-        operation = do[0].strip().lower
-        
-        
+queue = ["Shrinish", "Donde", "Heramb"]
+queue.append("Shrinish")
+queue.append("Donde")
+
+print(queue)
+print(queue.pop(0))
+print(queue)
+print(queue.pop(0))
+print(queue)
+
